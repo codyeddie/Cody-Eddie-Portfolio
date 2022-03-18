@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin: 10px 5px;
+}
+
+header nav {
+    margin: 10px 5px;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: grey;
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h2 {
+    font-size: 25px;
+    color: white;
+}
+
+.hero {
+    background-image: url(/assets/images/hero-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px
+}
+
+.hero div img {
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+}
+
+.hero h2 {
+    margin: 10px 10px;
+    color: white;
+}
+
+.hero p {
+    color: white;
+}
+
+.work {
+    background: grey;
+}
+
+.work h2 {
+    color: white;
+    padding: 15px;
+}
+
+.work-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-links div {
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.run-buddy img {
+    width: 25%;
+}
+
+.horiseon img {
+    width: 25%;
+}
+
+.keyboard img {
+    width: 25%;
+}
+
+.mouse img {
+    width: 25%;
+}
+
+.contact {
+    background: grey;
+    color: white;
+}
