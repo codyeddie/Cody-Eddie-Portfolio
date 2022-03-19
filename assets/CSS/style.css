@@ -2,24 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(/assets/images/hero-background.jpeg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 header {
     position: sticky;
     top: 0;
     padding: 10px;
-    /* background-image: url(/assets/images/hero-background.jpeg);
+    background-image: url(/assets/images/hero-background.jpeg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%; */
+    background-position: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: grey;
+    z-index: 9999;
 }
 
 header h1 {
@@ -44,7 +41,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 22px;
     color: white;
 }
 
@@ -53,7 +50,7 @@ header a {
 }
 
 footer {
-    background-color: grey;
+    background-color: rgb(175, 195, 175);
     padding: 0 10px;
     width: 100%;
     display: flex;
@@ -61,16 +58,16 @@ footer {
 }
 
 footer h2 { 
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
 .hero {
-    /* background-image: url(/assets/images/hero-background.jpeg);
+    background-image: url(/assets/images/hero-background.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; */
+    background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -94,31 +91,39 @@ footer h2 {
     width: 30%;
     align-content: center;
     flex: 1 0 0; 
-    color: rgb(25, 195, 155);
-    font-weight: bold;
+    color: white;
     line-height: 1.3;
 }
 
 .hero h2 {
     margin: 10px 10px;
     text-align: center;
-    font-size: 35;
+    font-size: 35px;
+    font-style: italic;
+    align-items: center;
 }
 
 .hero p {
     text-align: center;
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 16px;
 }
 
 .work {
-    background: grey;
+    background-image: url(/assets/images/hero-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
 }
 
 .work h2 {
-    color: white;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
+    font-weight: bolder;
+}
+.work a {
+    text-decoration: none;
 }
 
 .work-links {
@@ -132,6 +137,8 @@ footer h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+    font-size: 15px;
 }
 
 .run-buddy img {
@@ -139,9 +146,19 @@ footer h2 {
     height: 150px;
 }
 
+.run-buddy p {
+    position: absolute;
+    top: -13%;
+}
+
 .horiseon img {
     width: 300px;
     height: 150px;
+}
+
+.horiseon p {
+    position: absolute;
+    top: -13%;
 }
 
 .keyboard img {
@@ -149,12 +166,49 @@ footer h2 {
     height: 150px;
 }
 
+.keyboard p {
+    position: absolute;
+    top: -13%;
+}
+
 .mouse img {
     width: 300px;
     height: 150px;
 }
 
+.mouse p {
+    position: absolute;
+    top: -13%;
+}
+
 .contact {
+    background: rgb(175, 195, 175);
     color: white;
     padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact h2 {
+    font-size: 35px;
+}
+
+.contact div ul {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contact div ul li {
+    margin: 0 15px;
+}
+
+.contact a {
+    text-decoration: none;
 }
