@@ -141,42 +141,12 @@ footer h2 {
     font-size: 15px;
 }
 
-.run-buddy img {
+.site-picture img {
     width: 300px;
     height: 150px;
 }
 
-.run-buddy p {
-    position: absolute;
-    top: -13%;
-}
-
-.horiseon img {
-    width: 300px;
-    height: 150px;
-}
-
-.horiseon p {
-    position: absolute;
-    top: -13%;
-}
-
-.keyboard img {
-    width: 300px;
-    height: 150px;
-}
-
-.keyboard p {
-    position: absolute;
-    top: -13%;
-}
-
-.mouse img {
-    width: 300px;
-    height: 150px;
-}
-
-.mouse p {
+.site-picture p {
     position: absolute;
     top: -13%;
 }
@@ -211,4 +181,86 @@ footer h2 {
 
 .contact a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 980px) {
+    
+    header {
+        position: relative;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        position: relative;
+        justify-content: center;
+    }
+
+    footer h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .selfie {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero div img {
+        width: 300px;
+    }
+
+    .hero-cta {
+        width: 100%;
+    }
+
+    .work-links {
+        flex-direction: column;
+    }
+
+    .site-picture a {
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .site-picture img {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .site-picture p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact {
+        position: relative;
+        justify-content: center;
+    }
+
+    .contact h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* @media screen and (max-width: 768px) {
+
+    .hero-cta {
+        margin: 0 15px;
+    }
+    
+} */
+
+@media screen and (max-width: 575px) {
+
+    .contact div ul {
+        flex-direction: column;
+    }
 }
