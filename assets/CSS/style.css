@@ -4,25 +4,28 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-text-color: rgb(175, 195, 175);
+    --secondary-text-color: rgb(75, 95, 75);
+}
 header {
     position: sticky;
     top: 0;
     padding: 10px;
-    background-image: url(/assets/images/hero-background.jpeg);
+    background-image: url(/assets/images/hero-background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: grey;
     z-index: 9999;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 40px;
-    color: white;
+    color: var(--primary-text-color);
     margin: 10px 5px;
 }
 
@@ -42,7 +45,13 @@ header nav ul li a {
     padding: 10px 15px;
     margin: 0 10px;
     font-size: 22px;
-    color: white;
+    color: var(--primary-text-color);
+}
+
+header nav ul li a:hover {
+    background: var(--primary-text-color);
+    color: var(--secondary-text-color);
+    border-radius: 2px 4px;
 }
 
 header a {
@@ -50,7 +59,7 @@ header a {
 }
 
 footer {
-    background-color: rgb(175, 195, 175);
+    background-color: var(--primary-text-color);
     padding: 0 10px;
     width: 100%;
     display: flex;
@@ -59,11 +68,11 @@ footer {
 
 footer h2 { 
     font-size: 18px;
-    color: white;
+    color: var(--secondary-text-color);
 }
 
 .hero {
-    background-image: url(/assets/images/hero-background.jpeg);
+    background-image: url(/assets/images/hero-background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,6 +92,7 @@ footer h2 {
     margin: 10px;
     padding: 10px;
     width: 85%;
+    border-radius: 25px 50px;
 }
 
 .hero-cta {
@@ -91,7 +101,7 @@ footer h2 {
     width: 30%;
     align-content: center;
     flex: 1 0 0; 
-    color: white;
+    color: var(--primary-text-color);
     line-height: 1.3;
 }
 
@@ -109,12 +119,12 @@ footer h2 {
 }
 
 .work {
-    background-image: url(/assets/images/hero-background.jpeg);
+    background-image: url(/assets/images/hero-background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
+    color: var(--primary-text-color);
 }
 
 .work h2 {
@@ -122,6 +132,7 @@ footer h2 {
     text-align: center;
     font-weight: bolder;
 }
+
 .work a {
     text-decoration: none;
 }
@@ -138,12 +149,19 @@ footer h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .site-picture img {
     width: 300px;
     height: 150px;
+    border-radius: 50px 25px;
+}
+
+.site-picture img:hover {
+    width: 310px;
+    height: 160px;
+    border: 2px solid var(--primary-text-color);
 }
 
 .site-picture p {
@@ -152,8 +170,8 @@ footer h2 {
 }
 
 .contact {
-    background: rgb(175, 195, 175);
-    color: white;
+    background: var(--primary-text-color);
+    color: var(--secondary-text-color);
     padding: 10px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -171,7 +189,7 @@ footer h2 {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    color: white;
+    color: var(--secondary-text-color);
     font-size: 20px;
 }
 
@@ -181,6 +199,10 @@ footer h2 {
 
 .contact a {
     text-decoration: none;
+}
+
+.contact a:hover {
+    font-size: 26px;
 }
 
 @media screen and (max-width: 980px) {
@@ -224,12 +246,12 @@ footer h2 {
     }
 
     .site-picture a {
-        margin: 5px auto;
+        margin: 1px auto;
         text-align: center;
     }
 
     .site-picture img {
-        margin: 10px auto;
+        margin: 3px auto;
         text-align: center;
     }
 
@@ -249,14 +271,6 @@ footer h2 {
     }
 
 }
-
-/* @media screen and (max-width: 768px) {
-
-    .hero-cta {
-        margin: 0 15px;
-    }
-    
-} */
 
 @media screen and (max-width: 575px) {
 
